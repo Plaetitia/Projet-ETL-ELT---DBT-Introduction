@@ -1,0 +1,11 @@
+# un fichier stg_oders.yml pour documenter le modèle correspondant. 
+#Pour le moment, on va juste documenter le nom des colonnes, dans une prochaine quête, on rajouter des descriptions.
+version: 2
+
+models:    #Contient la liste des modèles documentés
+    - name: stg_orders  #Le nom du modèle, correspondant au fichier SQL.
+      columns:
+        - name: order_id
+        - name: customer_id
+        - name: order_date
+        - name: store_id

@@ -1,0 +1,12 @@
+DBT_QUESTPL:
+  target: dev
+  outputs:
+    dev:
+      type: mysql
+      host: localhost
+      user: root
+      password: BapLuc59700
+      port: 3306
+      dbname: my_dbt_db
+      schema: my_dbt_db
+      driver: MySQL ODBC 8.0 ANSI Driver

@@ -1,0 +1,14 @@
+#Ce fichier permettra de définir les tables sources utilisées dans les modèles de staging, facilitant ainsi la gestion des dépendances et la mise en place des tests.
+#Indique la version de la spécification YAML utilisée (v2 est la version actuelle pour DBT)
+version: 2 
+
+#Définit la section contenant les sources de données.
+sources:
+
+    - name: jaffle_shop #jaffle_shop: Le nom de la source de données, souvent lié au projet ou à l'entrepôt de données.
+      schema: my_dbt_db  #Le nom du schéma où sont stockées les tables brutes 
+
+      tables: #Liste des tables brutes référencées dans vos modèles.
+        - name: raw_customers # Le nom de la table brute.
+        - name: raw_orders # Le nom de la table brute.
+
